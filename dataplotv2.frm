@@ -58,11 +58,6 @@ Private Sub generar_Click()
         End If
     Next n
     
-    'Cells(18, 2).Value = colNum1
-    'Cells(19, 2).Value = filaNum1
-    'Cells(20, 2).Value = colNum2
-    'Cells(21, 2).Value = filaNum2
-
     'Cells(18, 2).Value = Asc(filaNum1) - 96
     'Cells(18, 3).Value = colNum1
     'Cells(19, 2).Value = Asc(filaNum2) - 96
