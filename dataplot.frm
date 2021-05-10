@@ -135,4 +135,25 @@ Private Sub generar_Click()
                                             Width:=400, _
                                             Height:=400, _
                                             Top:=50)
+    Set DataRng = Range(lefran, righran)
+    Chrt.Chart.SetSourceData Source:=DataRng.CurrentRegion, PlotBy:=xlRows
+    'Chrt.Chart.
+
+    'Chrt.Chart.ChartType = xl3DColumnStacked
+    'Chrt.Chart.ChartType = xl3DColumnStacked100
+    Chrt.Chart.ChartType = xlBarStacked100
+    'ActiveChart.PlotBy = xlColumns
+    'ActiveChart.PlotBy = xlRows
+    Chrt.Chart.HasTitle = True
+    Chrt.Chart.Location where:=xlLocationAsNewSheet
+    'Chrt.Location xlLocationAsObject
+    'Chrt.Chart.Location Name:=Sheet2
+    'Chrt.Chart.Location Where:=xlLocationAsObject, Name:="Sheet2"
+    'Set Chrt = Chrt.Location(Where:=xlLocationAsObject).Name:="Sheet2"
+    'Chrt.Chart.Location Where:=xlLocationAsObject
+    'Chrt.Chart Name:=Sheet2
+    'Set embeddedchart = Sheets("Sheet1").Shapes.AddChart
+End Sub
+
+
 
