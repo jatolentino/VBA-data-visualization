@@ -159,7 +159,6 @@ Private Sub generar_Click()
     Dim srs As Series
     
     Chrt.Chart.SetElement (msoElementDataLabelOutSideEnd)
-    'Chrt.Chart.SetElement msoElementPrimaryCategoryAxisTitleHorizontal
     'Chrt.Chart.SetElement msoElementPrimaryCategoryAxisTitleBelowAxis
     'Chrt.Chart.SeriesCollection(1).DataLabels.ShowPercentege te
     'Chrt.Chart.ChartObjects(1).At
