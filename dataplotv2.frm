@@ -233,22 +233,13 @@ Private Sub generar_Click()
     Chrt.Chart.HasTitle = True
     'Chrt.Chart.Location where:=xlLocationAsNewSheet
 
-    'Chrt.Location xlLocationAsObject
-    'Chrt.Chart.Location Name:=Sheet2
-    'Chrt.Chart.Location Where:=xlLocationAsObject, Name:="Sheet2"
-    'Set Chrt = Chrt.Location(Where:=xlLocationAsObject).Name:="Sheet2"
-    'Chrt.Chart.Location Where:=xlLocationAsObject
-    'Chrt.Chart Name:=Sheet2
-    'Set embeddedchart = Sheets("Sheet1").Shapes.AddChart
+
     Dim newSheet As Worksheet
     'Dim sourceSheet As Worksheet
     ActiveWorkbook.Worksheets.Add(Before:=Application.Worksheets(1)).Name = "NewSheet"
     Set newSheet = Application.Worksheets("NewSheet")
     Chrt.Chart.Location xlLocationAsObject, "NewSheet"
-    'Chrt.Chart.SetElement (msoElementDataLabelOutSideEnd)
-    'Chrt.Chart.SetElement = msoElementDataLabelOutSideEnd
-    'Set Chrt ¿ Active
-    'Chrt.SetElement msoElementDataLabelOutSideEnd
+
     
     Unload Me
 End Sub
