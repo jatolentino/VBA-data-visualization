@@ -104,3 +104,35 @@ Private Sub generar_Click()
         m = 0
     Next Ccounter
 
+    Cells(filaNum2 + 3, Range(colNum1 & 1).Column).Value = "NO PRESENTO"
+    Cells(filaNum2 + 4, Range(colNum1 & 1).Column).Value = "MODIFICAR"
+    Cells(filaNum2 + 5, Range(colNum1 & 1).Column).Value = "ACTUALIZAR"
+    Cells(filaNum2 + 6, Range(colNum1 & 1).Column).Value = "EN PARTE"
+    Cells(filaNum2 + 7, Range(colNum1 & 1).Column).Value = "SI PRESENTA"
+
+    'Cells(18, 2).Value = colNum1 & (filaNum2 + 2)
+    'Cells(18, 3).Value = Chr(Asc(colNum2) - 32) & (filaNum2 + 2 + 4)
+
+    Dim lefran
+    Dim righran
+    lefran = colNum1 & (filaNum2 + 2)
+    'righran = Chr(Asc(colNum2) - 32) & (filaNum2 + 2 + 5)
+    righran = Split(Cells(1, colNum2).Address, "$")(1) & (filaNum2 + 2 + 5)
+    'Split(Cells(1, colNum2).Address, "$")(1)
+    Cells(23, 2).Value = righran
+    Cells(24, 2).Value = lefran
+'    Cells(18, 4).Value = Chr(65)
+'    Cells(18, 5).Value = Chr(66)
+'    Cells(18, 6).Value = Chr(67)
+'    Cells(18, 7).Value = Chr(68)
+'    Cells(18, 8).Value = Chr(69)
+'    Cells(18, 9).Value = Chr(90)
+
+    Dim Chrt As ChartObject
+    'Set Chrt = Sheets("Sheet2").ChartObjects.Add(Left:=180, Width:=270, Top:=7, Height:=210)
+    Dim DataRng As Range
+    Set Chrt = ActiveSheet.ChartObjects.Add(Left:=400, _
+                                            Width:=400, _
+                                            Height:=400, _
+                                            Top:=50)
+
