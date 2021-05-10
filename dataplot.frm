@@ -12,11 +12,7 @@ End Sub
 Private Sub generar_Click()
 'Sub boton()
     Dim LCounter As Integer
-    Dim i As Integer
-    Dim j As Integer
-    Dim k As Integer
-    Dim l As Integer
-    Dim m As Integer
+    Dim i As Integer, j As Integer, k As Integer, l As Integer, m As Integer
     Dim Ccounter As Integer
     i = 0
     j = 0
