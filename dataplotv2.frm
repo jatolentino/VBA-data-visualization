@@ -156,8 +156,6 @@ Private Sub generar_Click()
     Chrt.Chart.SetElement (msoElementDataLabelOutSideEnd)
     'Chrt.Chart.SetElement msoElementPrimaryCategoryAxisTitleBelowAxis
     'Chrt.Chart.SeriesCollection(1).DataLabels.ShowPercentege te
-    'Chrt.Chart.ChartObjects(1).At
-    'Chrt.Chart.ApplyDataLabels Type:=xlDataLabelsShowPercent
     
     'Chrt.Chart.SetElement (msoElementLegendTop)
     'Chrt.Chart.ApplyDataLabels Type:=xlDataLabelsShowPercent
