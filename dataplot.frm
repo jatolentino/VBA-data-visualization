@@ -155,5 +155,13 @@ Private Sub generar_Click()
     'Set embeddedchart = Sheets("Sheet1").Shapes.AddChart
 End Sub
 
+'Private Sub Image1_BeforeDragOver(ByVal Cancel As MSForms.ReturnBoolean, ByVal Data As MSForms.DataObject, ByVal X As Single, ByVal Y As Single, ByVal DragState As MSForms.fmDragState, ByVal Effect As MSForms.ReturnEffect, ByVal Shift As Integer)
+'Image1.Picture = LoadPicture("C:\Users\Josetv\Documents\logoinst")
+'
+'End Sub
+
+Private Sub Label2_Click()
+
+End Sub
 
 
