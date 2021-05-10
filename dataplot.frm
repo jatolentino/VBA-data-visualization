@@ -57,3 +57,50 @@ Private Sub generar_Click()
         End If
     Next n
     
+    'Cells(18, 2).Value = colNum1
+    'Cells(19, 2).Value = filaNum1
+    'Cells(20, 2).Value = colNum2
+    'Cells(21, 2).Value = filaNum2
+
+    'Cells(18, 2).Value = Asc(filaNum1) - 96
+    'Cells(18, 3).Value = colNum1
+    'Cells(19, 2).Value = Asc(filaNum2) - 96
+    'Cells(19, 3).Value = colNum2
+    
+    'For Ccounter = colNum1 To colNum2
+    For Ccounter = Range(colNum1 & 1).Column To Range(colNum2 & 1).Column
+        For LCounter = filaNum1 To filaNum2
+            If Cells(LCounter, Ccounter).Value = "NO PRESENTO" Then
+                i = i + 1
+            ElseIf Cells(LCounter, Ccounter).Value = "MODIFICAR" Then
+                j = j + 1
+            ElseIf Cells(LCounter, Ccounter).Value = "ACTUALIZAR" Then
+                k = k + 1
+            ElseIf Cells(LCounter, Ccounter).Value = "EN PARTE" Then
+                l = l + 1
+            ElseIf Cells(LCounter, Ccounter).Value = "SI PRESENTA" Then
+                m = m + 1
+            End If
+        Next LCounter
+        'Cells(filaNum2 + 3, Ccounter).Value = i
+        'Cells(Asc(filaNum2) - 96 + 3, Ccounter).Value = i
+
+        Cells(filaNum2 + 2, Ccounter + 1).Value = "Pregunta" & pi
+        pi = pi + 1
+
+        Cells(filaNum2 + 3, Ccounter + 1).Value = i
+        i = 0
+
+        Cells(filaNum2 + 4, Ccounter + 1).Value = j
+        j = 0
+
+        Cells(filaNum2 + 5, Ccounter + 1).Value = k
+        k = 0
+
+        Cells(filaNum2 + 6, Ccounter + 1).Value = l
+        l = 0
+
+        Cells(filaNum2 + 7, Ccounter + 1).Value = m
+        m = 0
+    Next Ccounter
+
